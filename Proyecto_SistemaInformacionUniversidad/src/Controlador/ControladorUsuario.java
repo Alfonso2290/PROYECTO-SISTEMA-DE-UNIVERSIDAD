@@ -14,8 +14,6 @@ public class ControladorUsuario {
 		String cla=request.getParameter("txtClave");
 		String tipo=request.getParameter("cbTipo");
 		
-		System.out.println("Param: " + usu  + " " + cla + " " + tipo);
-		
 		if(tipo.equals("Administrador")) {
 			
 			if(usu.equalsIgnoreCase("Alfonso") && cla.equals("123"))
@@ -40,6 +38,15 @@ public class ControladorUsuario {
 		}else {
 			return "";
 		}
-
+	}
+	
+	@RequestMapping("cerrarSesion")
+	public String cerrarSesion() {
+		return "index";
+	}
+	
+	@RequestMapping("RegistroUsuario")
+	public String RegistroUsuario() {
+		return "RegistroUsuario";
 	}
 }

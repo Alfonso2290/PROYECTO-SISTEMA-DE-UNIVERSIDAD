@@ -32,9 +32,6 @@
         <script type="text/javascript" src="<%=request.getContextPath()%>/js-app/jquery.flexisel.js"></script>	
 		
 		<script type="text/javascript">
-			function mensajeAlerta(){ //luego borrar
-				alert("Saliendo de sesion");
-			}
 			
 			function evalua(){ //luego borrar
 				alert("Malla curricular");
@@ -85,6 +82,7 @@
 				xmlhttp.send(null);
 				
 			}
+
 		</script>
 	</head>
 	<body>
@@ -112,7 +110,7 @@
 		                </div>
 		                <button style="font-size: 12pt;" class="btn btn-lg btn-primary btn-block btn-signin" type="button" onclick="ingresoSesion('MenuPrincipal','','contenedor','GET')">Entrar</button>
 		            </form>
-		            <a href="#" class="forgot-password">
+		            <a href="javascript:ajax('RegistroUsuario','','contenedor','GET')" class="forgot-password">
 		                Registrarse?
 		            </a>
 		        </div>

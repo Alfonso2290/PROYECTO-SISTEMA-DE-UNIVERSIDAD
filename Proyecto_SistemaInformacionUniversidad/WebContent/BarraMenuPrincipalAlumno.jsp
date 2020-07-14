@@ -54,7 +54,7 @@
                 <a href="#"><img src="">Plan de Estudios</a>
             </li>                    
             <li>
-                <a href="javascript:mensajeAlerta()" ><img src="">Cerrar Sesion </a>
+                <a href="javascript:ajax('cerrarSesion','','contenedor','GET')" ><img src="">Cerrar Sesion </a>
             </li>
         </ul>
     </div>
